@@ -10,6 +10,8 @@
       $("#stop").on('click',app.stop);
       $("#reset").on('click',app.reset);
       $("#reini").on('click',app.reini);
+      $("#iniminut").val();
+      $("#inisecond").val();
       
     },
     updateView:function(){
@@ -37,9 +39,13 @@
       clearInterval(app.intervalID);
     },
     reset:function(){
-      app.timer = 50;
-      
+      app.timer = 50;  
     },
+    reini:function{
+        
+    },
+
+
     userSetTime: function(){
       var second= parseInt($('#second').val(),1000);
       app.setTimeout(second);

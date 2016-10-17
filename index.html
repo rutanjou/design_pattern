@@ -6,26 +6,21 @@
 	<title>Countdown_Design Pattern101</title>
 </head>
 <body>
-	<div class="ui grid">
-		<div class="eight wide column centered">
-			<div id="display" class="six wide column centered">
-				<span id="minute"></span>:
-				<span id="second"> </span>
-			</div>
+	
+	<div id="display">
+		<span id="minute"></span>:
+		<span id="second"> </span>
+	</div>
 			<button id="play">play</button>
 			<button id="stop">stop</button>
 			<button id="reset">reset</button>
-			<button id="reini">réinitialisation</button>
 
-	
-
-
-	
+	<div class="count">
+		<input type="iniminut" name="iniminut" id="iniminut">:
+		<input type="inisecond" name="inisecond" id="inisecond">
+		<button id="reini">réinitialisation</button>
+	</div>
 	<script src="node_modules/jquery/dist/jquery.js"></script>
 	<script src="object.js"></script>
-	
-
-
-
 </body>
 </html>

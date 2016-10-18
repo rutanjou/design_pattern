@@ -1,1 +1,55 @@
-
+#display{
+	text-align: center;
+	color: red;
+	font-size: 300px;
+}
+body{
+	background-image: url(https://unsplash.it/1400/1600?random&time=1476792141434);
+	text-align: center;
+}
+div.buttons{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	
+}
+#play{
+	background-color: #f44336;
+	color:white;
+	font-size: 25px;
+	margin-right: 25px;
+	border-style: solid;
+}
+#stop{
+	background-color: #f44336;
+	color:white;
+	font-size: 25px;
+	margin-right: 25px;
+	border-style: solid;
+}
+#reset{
+	background-color: #f44336;
+	color:white;
+	font-size: 25px;
+	margin-right: 25px;
+	border-style: solid;
+}
+#reini{
+	background-color: #f44336;
+	color:white;
+	font-size: 25px;
+	border-style: solid;
+	margin-left: 25px;
+}
+div.count{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 25px;
+}
+input{
+	border-color: black;
+	border-style: solid;
+	width: 80px;
+	height: 30px;
+	font-size: 35px;
+	text-align: center;
+}

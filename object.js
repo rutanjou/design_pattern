@@ -22,11 +22,10 @@
       $("#second").text(second);
     },
     play: function(){
+      clearInterval(app.intervalID);
+      app.reini();
       app.intervalID = setInterval(app.decrement,1000); 
-      if(app.timer === 0)
-      {
-       app.stop();
-      };  
+     
     },
     
     decrement:function(){
@@ -34,30 +33,25 @@
       app.updateView();
       if(app.timer === 0)
       {
-        app.stop();
+        clearInterval(app.intervalID);
       };
     },
     stop:function(){
         clearInterval(app.intervalID);
-        if(app.timer === 0)
-      {
-        clearInterval(app.intervalID);
-      };
+       
     },
     reset:function(){
-      app.timer = 10;
+      app.reini();
+
     },
     reini:function(){
       app.min = parseInt($('#iniminut').val(),10);
       app.secon = parseInt($('#inisecond').val(),10);
       app.updateView();
       app.timer = parseInt(app.min,10)*60 + parseInt(app.secon,10);
-      if(app.timer === 0)
-      {
-        clearInterval(app.intervalID);
-      };
-    },
-    
+      
+    }, 
   };
   app.init();
+
 })();

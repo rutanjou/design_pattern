@@ -1,7 +1,7 @@
 #display{
 	text-align: center;
-	color: white;
-	font-size: 300px;
+	color: black;
+	font-size: 350px;
 }
 body{
 	background-image: url(https://unsplash.it/1400/1600?random&time=1476792141434);
@@ -52,4 +52,8 @@ input{
 	height: 30px;
 	font-size: 35px;
 	text-align: center;
+}
+#barre{
+	background-color: red;
+	width: 100%;
 }
